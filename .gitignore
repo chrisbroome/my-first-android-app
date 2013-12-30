@@ -1,0 +1,6 @@
+# ignore user-specific properties
+local.properties
+
+# ignore build artifacts
+/bin
+/gen
