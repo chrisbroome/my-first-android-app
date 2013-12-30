@@ -4,3 +4,6 @@ local.properties
 # ignore build artifacts
 /bin
 /gen
+
+# ignore temporary editor files
+*.sw?
