@@ -5,5 +5,8 @@ local.properties
 /bin
 /gen
 
+# ignore external dependencies
+/libs
+
 # ignore temporary editor files
 *.sw?
