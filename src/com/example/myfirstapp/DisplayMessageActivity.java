@@ -15,21 +15,14 @@ public class DisplayMessageActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     getActionBar().setDisplayHomeAsUpEnabled(true);
-    //setContentView(R.layout.title_activity_display_message);
-    //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-      // show the up button in the action bar
-    //  getActionBar().setDisplayHomeAsUpEnabled(true);
-    //}
+
     Intent intent = getIntent();
     String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+    setContentView(R.layout.display_message);
 
-    // create the text view
-    TextView textView = new TextView(this);
-    textView.setTextSize(40);
+    // display the text in the TextView
+    TextView textView = (TextView)findViewById(R.id.display_message);
     textView.setText(message);
-
-    // set the TextView as the activity layout
-    setContentView(textView);
   }
 
   @Override
